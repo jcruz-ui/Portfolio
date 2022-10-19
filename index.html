@@ -9,10 +9,20 @@
 
 
   <style>
-    p {
+    p,a {
       font-size: 2em;
       font-family: Arial, Helvetica, sans-serif;
       padding-right: 20%;
+    }
+
+    nav {
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    ul {
+      list-style: none;
     }
   </style>
 
@@ -36,13 +46,9 @@
       function getColor() {
         const colors = [
           "red",
-          "orange",
-          "yellow",
           "green",
           "blue",
           `cyan`,
-          `pink`,
-          `purple`,
           `gold`,
         ];
         return colors[Math.floor(Math.random() * colors.length)];
@@ -97,22 +103,39 @@
   </script>
 </head>
 
+<!-- <nav>
+  <ul>
+    <li><a href="./crespo_Lab3.html">Classes & objects example</a></li>
+  </ul>
+</nav> -->
+
+
 <body id="body">
 
   <img src="./profilePic.jpg" style="width: 15%;"><br>
-  <p id="target">
+  <p id="target1">
     Hello, welcome to my page.<br>
-    My name is Juan Cruz.<br>
-    I study web development at Joliet Junior College.<br><br>
-    You are looking at a JavaScript program that uses async functions, promises to be more specific, to display text in
-    an interesting manner.<br><br>
-    <a href="https://github.com/jcruz-ui/Portfolio/blob/main/index.html">See the code for this page.</a><br><br>
-    Send me an email:<br>
-    mtycruz@gmail.com
+    My name is Juan Cruz.
   </p>
+
+  <p id="target2">
+    I study web development at Joliet Junior College.<br>
+  </p>
+
+
+  <a id="target3" href="https://github.com/jcruz-ui/Portfolio/blob/main/index.html">See the code for this page.</a>
+  
+  <p id="target4">Send me an email:<br>
+    mtycruz@gmail.com</p>
+  </p>
+
   <script>
-    rainbowText(18, 6, `target`);
+    rainbowText(10, 2, `target1`);
+    rainbowText(10, 2, `target2`);
+    rainbowText(10, 2, `target3`);
+    rainbowText(10, 2, `target4`);
   </script>
+
 </body>
 
 </html>
